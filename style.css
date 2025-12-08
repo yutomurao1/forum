@@ -1,0 +1,107 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f0f2f5; /* 薄い背景色 */
+    display: flex; /* コンテンツを中央に寄せるための設定 */
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+/* サイトヘッダー (English Platform) */
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* フォーム全体を囲む白いカード */
+.register-card {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px; /* 角丸 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 影 */
+    width: 350px; /* カードの幅 */
+    text-align: center;
+}
+
+.register-card h2 {
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* フォームの各グループ */
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* 入力欄の基本スタイル */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #cceeff; /* 水色のボーダー */
+    border-radius: 5px;
+    background-color: #f7f7f7; /* 薄いグレーの背景 */
+    box-sizing: border-box; /* paddingとborderを幅に含める */
+}
+
+/* パスワード入力欄と「表示」ボタンを横並びにするグループ */
+.password-input-group {
+    display: flex;
+    border: 1px solid #cceeff;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    overflow: hidden; /* 子要素の角丸を保持 */
+}
+
+.password-input-group input {
+    border: none;
+    background-color: transparent;
+    flex-grow: 1;
+    padding: 8px 10px;
+}
+
+.show-password-btn {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #333;
+    flex-shrink: 0; /* 幅を固定 */
+}
+
+/* 新規登録ボタン */
+.register-btn {
+    width: 100%;
+    background-color: #4c8ff8; /* 青色の背景 */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ログインへ戻るリンク */
+.login-link-container {
+    margin-top: 15px;
+}
+
+.login-link {
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+}
